@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+    label {width: 120px; display: inline-block;}
+    </style>
     <style type="text/css">
     </style>
 </head>
@@ -12,22 +15,98 @@
 
         <!-- 로그인 -->
         <fieldset>
+            <legend>&nbsp;로그인&nbsp;</legend>
+            <div>
+                <label for="id">아이디: </label>
+                <input type="text" name="id" id="id">
+            </div>
+            <div>
+                <label for="pw">패스워드: </label>
+                <input type="text" name="pw" id="pw">
+            </div>
         </fieldset>
 
         <!-- 회원가입 -->
         <fieldset>
+             <legend>&nbsp;회원 가입&nbsp;</legend>
+             <div>
+                 <label for="id2">아이디: </label>
+                 <input type="text" name="id2" id="id2">
+             </div>
+             <div>
+                 <label for="pw2">패스워드: </label>
+                 <input type="text" name="pw2" id="pw2">
+             </div>
+             <div>
+                 <label for="pw3">패스워드 확인: </label>
+                 <input type="text" name="pw3" id="pw3">
+             </div>
+             <div>
+                 <label for="name">이름: </label>
+                 <input type="text" name="name" id="name" placeholder="이름을 입력하세요">
+             </div>
+             <div>
+                 <label for="email">이메일:</label>
+                 <input type="text" name="email" id="email">
+             </div>
+             <div>
+                 <label for="phone">전화번호:</label>
+                 <input type="tel" name="phone" id="phone">
+             </div>
+             <div>
+                 <label for="birth">생년월일: </label>
+                 <input type="date" name="birth" id="birth">
+             </div>
         </fieldset>
 
         <!-- 수강신청 -->
         <fieldset>
+            <legend>&nbsp;수강 신청&nbsp;</legend>
+            <div>
+                <label for="1">영어 초급:</label>
+                <input type="radio" name="1" id="1">
+            </div>
+            <div>
+                <label for="1">영어 중급:</label>
+                <input type="radio" checked name="1" id="1">
+            </div>
+            <div>
+                <label for="1">영어 고급:</label>
+                <input type="radio" name="1" id="1">
+            </div>    
+            <br>
+            <div>
+                <label for="11">영어 초급</label>
+                <input type="checkbox" name="11" id="11">
+            </div>
+            <div>
+                <label for="11">영어 중급</label>
+                <input type="checkbox" checked name="11" id="11">
+            </div>
+            <div>
+                <label for="11">영어 고급</label>
+                <input type="checkbox" name="11" id="11">
+            </div>                
         </fieldset>
 
-        <!-- selec박스 -->
+        <!-- select박스 -->
         <fieldset>
+            <select name="" id="">
+                <optgroup label="공과대학">
+                <option>건축과</option>
+                <option>토목과</option>
+                </optgroup> 
+                <optgroup label="자연과학대학">
+                <option selected>수학과</option>
+                <option>생물학과</option>
+                </optgroup> 
+            </select>
         </fieldset>
 
         <!-- 전송 버튼 : form 을 완료 -->
+        <input type="submit" value="전송">
         <!-- 초기화 버튼 :  form 입력 값을 초기화  -->
+        <input type="reset" value="초기화">
 
     </form>
 

@@ -4,18 +4,56 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style type="text/css">
+    label {width: 100px; display: inline-block;}
     </style>
 </head>
 <body>
-    <h1>��ǰ �ֹ���</h1>
-
-        <!-- ���� ���� -->
-
-        <!-- ����� ���� -->
-
-        <!-- �ֹ� ���� -->
-
-        <!-- �ֹ��ϱ� -->
-        <!-- �ٽ��ۼ� : form �Է� �� �ʱ�ȭ  -->
-</body>
+    <h1>상품 주문서</h1>
+<form action="">
+    <fieldset>
+        <legend>&nbsp;개인 정보&nbsp;</legend>
+        <div>
+            <label for="name">이름</label>
+            <input type="text" placeholder="여백없이 입력" name="name" id="name">
+        </div>
+        <div>
+            <label for="tel">연락처</label>
+            <input type="tel" placeholder="연락가능한 번호" name="tel" id="tel">        
+        </div>        
+    </fieldset>
+    <fieldset>
+        <legend>&nbsp;배송지 정보&nbsp;</legend>
+        <div>
+            <label for="place">주소</label>
+            <input required style="width:250px" type="text" name="place" id="place">
+        </div>
+        <div>
+            <label for="tel1">전화번호</label>
+            <input required type="tel" name="tel1" id="tel1">
+        </div>
+        <div>
+            <label for="memo" style="vertical-align:top;">메모</label>
+            <textarea name="memo" id="memo" cols="25" rows="3"></textarea>
+        </div>        
+    </fieldset>
+    <fieldset>
+        <legend>&nbsp;주문 정보&nbsp;</legend>
+        <div>
+            <input type="checkbox" checked name="1" id="1">
+            <label for="1" style="width:500px" > 과테말라 안티구아 (100g) <input type="number" style="width:50px" name="1" id="1">개</label>
+        </div>
+        <div>
+            <input type="checkbox" name="1" id="1">
+            <label for="1" style="width:500px" >인도네시아 만델링 (100g) <input type="number" style="width:50px" name="1" id="1">개</label>
+        </div>
+        <div>
+            <input type="checkbox" name="1" id="1">
+            <label for="1" style="width:500px" >탐라는도다(블렌딩) (100g) <input type="number" style="width:50px" name="1" id="1">개</label>
+        </div>
+    </fieldset>
+    <div align="center">
+<input type="submit" value="주문하기">
+<input type="reset" value="다시 작성">
+    </div>
+</form>
 </html>
