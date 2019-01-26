@@ -3,6 +3,23 @@
 <head>
     <meta charset="utf-8">
     <title>폰트 CSS 속성</title>
+    <style>
+    #font1 {font-family: serif}
+    #font2 {font-family: "나눔바른고딕"}
+    @import url(https://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+    #font3 {font-family: 'Nanum Pen Script'}
+    @font-face {font-family: "NanumBarunGothicWebBold"; font-style: "bold" font-weight: 700; src: url(NanumBarunGothicWebBold.woff);}
+    #font4 {font-family: "NanumBarunGothicWebBold"} 
+    @font-face {font-family: "NanumBarunGothicWebBold"; font-style: "bold" font-weight: 700; src: url(http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff);}
+    #font5 {font-family: "NanumBarunGothicWebBold"} 
+    p.size1 {font-size: 20px;}
+    p.size2 {font-size: 50%;}
+    p.size3 {font-size: 1.5em;}
+    p.no1 {font-style: normal;}
+    p.no2 {font-style: italic;}
+    p.no3 {font-style: oblique;}
+    </style>
+
 </head>
 <body>
     <pre>
@@ -32,7 +49,7 @@
     <hr>
 
     <h2>font-size 설정 : 단위: px, %(부모 태그를 기준으로), em </h2>
-    <p> font-size 속성 적용 전  </p>
+    <p> font-size 속성 적용 전  M</p>
     <p class = "size1"> font-size 속성 값 : px </p>
     <p class = "size2"> font-size 속성 값 : % </p>
     <p class = "size3"> font-size 속성 값 : em </p>
