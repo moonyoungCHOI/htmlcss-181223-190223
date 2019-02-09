@@ -3,6 +3,58 @@
 <head>
     <meta charset="utf-8">
     <title>배경 이미지</title>
+    <style>
+        body {background-image: url(./images/bg1.png)}
+        #clip div {float: left; width: calc(100%/3 - 40*2px); 
+                   border: 10px dotted #000000; 
+                   background-color: skyblue; 
+                   padding: 20px; margin: 10px;}
+        #clip > div.bg1 {background-clip: border-box;}
+        #clip > div.bg2 {background-clip: padding-box;}
+        #clip > div.bg3 {background-clip: content-box;}
+        #clip::after {clear: both; display: block; content: '';}
+
+        #color {background-color: blue;}
+        #color > div {border: 1px solid black; 
+                    background-color: white; 
+                    margin-right: 50px;}
+
+        #origin div {float: left; width: calc(100%/3 - 40*2px); 
+                    border: 20px solid grey; 
+                    background-color:white; 
+                    padding: 20px; 
+                    background-image: url(./images/bg5.png); 
+                    background-repeat: no-repeat;}
+        #origin > div.bg1 {background-origin: border-box;}
+        #origin > div.bg2 {background-origin: padding-box;}
+        #origin > div.bg3 {background-origin: content-box;}
+        #origin::after {clear: both; display: block; content: '';}
+
+        #position div {background-image: url(../images/bg2.jpg);
+                    width: 800px; height: 150px;
+                    background-repeat: no-repeat;
+                    padding-top: 100px; padding-bottom: 20px;
+                    margin-top: 20px;}
+        #position > div.bg1 {background-position: top left;}
+        #position > div.bg2 {background-position: center;}
+        #position > div.bg3 {background-position: bottom;}
+        #position > div.bg4 {background-position: bottom right;}
+
+        #size div {background-image: url(../images/bg4.jpg);
+                   background-repeat: no-repeat;
+                   background-position: left top;
+                   width: calc(100%/3 - 11*2px) ; height: 300px;
+                   border: 1px solid #000000;
+                   margin: 10px; float: left;}
+
+        #size > div.bg1 {background-size: auto;}
+        #size > div.bg2 {background-size: 200px 150px;}
+        #size > div.bg3 {background-size: 60% 40%;}
+        #size > div.bg4 {background-size: contain;}
+        #size > div.bg5 {background-size: cover;}
+        #size > div.bg6 {background-size: 100% 100%;}
+
+    </style>
 </head>
 <body>
     <div id="clip">
@@ -128,4 +180,4 @@
         <div class="bg6">배경 이미지 사이즈 : 100% 100%</div>
     </div>
 </body>
-</html>
+</html>
