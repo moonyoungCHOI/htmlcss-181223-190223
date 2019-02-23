@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <title>z-index 속성</title>
 </head>
+<style>
+.b1, .b2, .b3 {border: 1px solid black;
+               margin: 10px;
+               width: 100px; height: 100px;}
+.b1 {background-color: red;}
+.b2 {background-color: orange; 
+     position: relative; left: 40px; top: -100px;
+     z-index: 1;}
+.b3 {background-color: cornflowerblue;
+     position: relative; left: 20px; top: -170px;}
+</style>
 <body>
     <div id="wrapper">
         <div class="b1">1</div>
@@ -11,4 +22,4 @@
         <div class="b3">3</div>
     </div>
 </body>
-</html>
+</html>

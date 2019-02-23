@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <title>레이아웃 A ::: Auto stretch content's height</title>
 </head>
+<style>
+/*브라우저 CSS 초기화*/
+* {margin: 0; padding: 0;}
+html, body, #wrap {height: 100%;}
+#header {height: 50px; border: 1px solid red;}
+#content {height: calc(100% - 100px); 
+          border: 1px solid green;}
+#footer {height: 50px; border: 1px solid blue;}
+</style>
 <body>
     <div id="wrap">
         <div id="header">
@@ -20,4 +29,4 @@
     </div>
 </body>
 
-</html>
+</html>

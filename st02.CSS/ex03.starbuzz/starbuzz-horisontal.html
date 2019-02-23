@@ -4,7 +4,29 @@
     <meta charset="utf-8">
     <title>Starbuzz Coffee</title>
   </head>
+<style>
+#headerSlogan {float: right;}
+#award {position: absolute; left: calc(50% - 50px); top: 35px;}
+#header {border: 5px solid burlywood; 
+         background-color: rgb(99, 70, 56);}
+#tableContainer {border-right: 5px solid burlywood;
+                 border-left: 5px solid burlywood;
+                 background-color: wheat;}
+#footer {border: 5px solid burlywood;}
+#main {border-left:5px solid burlywood;
+       border-right:5px solid burlywood;}
+#tableRow > div {float: left; box-sizing: border-box;}
+#tableRow:after {clear: both; display: block; content: '';}
+#drinks {width: 200px;}
+#main {width: calc(100% - 400px);}
+#sidebar {width: 200px;}
+#coupon {position: absolute; left: -50px; top: 500px;}
+#footer {background-color: rgb(99, 70, 56); 
+         text-align: center;
+         padding: 10px;}
+p.beanheading {text-align: center;}
 
+</style>
   <body>
     <div id="header">
       <img id="headerLogo"
@@ -123,4 +145,4 @@
     </div>
 
   </body>
-</html>
+</html>

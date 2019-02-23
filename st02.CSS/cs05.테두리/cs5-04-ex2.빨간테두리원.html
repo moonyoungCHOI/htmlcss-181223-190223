@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Dummy Text</title>
+</head>
+<style>
+    body {border: 1px solid black; 
+          width: 500px; height: 300px;}
+    .round1 {background-color: red; 
+             width: 100px; height: 100px; 
+             margin: 10px; border-radius: 100%; margin-bottom:70px;}
+    .round2 {background-color: yellow; 
+             width: 100px; height: 100px; 
+             margin: 10px; border-radius: 100%;}
+    .round3 {background-color: green; 
+             width: 100px; height: 100px; 
+             margin: 10px; border-radius: 100%; margin-bottom:70px;}
+    .round4 {background-color: blue; 
+             width: 100px; height: 100px; 
+             margin: 10px; border-radius: 100%;}
+#set1 {float: left; width: 55%;}
+#set1:after {clear: both; display: block; content: '';}
+#set2 {float: right; width: 25%;}
+#set2:after {clear: both; display: block; content: '';}
+</style>
+<body>
+<div>
+<nav id="set1">
+    <div class="round1"></div>
+    <div class="round2"></div>
+</nav>
+<nav id="set2">
+    <div class="round3"></div>
+    <div class="round4"></div>
+</nav>
+</div>
+</body>

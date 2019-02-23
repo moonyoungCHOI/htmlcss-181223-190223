@@ -4,14 +4,29 @@
     <meta charset="utf-8">
     <title>박스모델</title>
 </head>
+<style>
+div {border-radius: 10px;}
+.box1 {box-shadow: 20px -20px 5px 0 #ff0000;}
+.box2 {box-shadow: -20px -20px 15px 5px #ff0000 inset;}
+.box3 {box-shadow: -20px 20px 5px 0 #ff0000;}
+.box4 {box-shadow: 20px 20px 5px 0 #ff0000;}
+.box5:hover {box-shadow: 20px 20px 5px 0 #ff0000;}
+</style>
 <body>
-
     <div class="box1"
          style="width:200px;height:100px; border:3px solid black; margin: 20px; display: inline-block;">
     </div>
-
     <div class="box2"
          style="width:200px;height:100px; border:3px solid black; margin: 20px; display: inline-block;">
     </div>
+    <div class="box3"
+         style="width:200px;height:100px; border:3px solid black; margin: 20px; display: inline-block;">
+    </div>
+    <div class="box4"
+         style="width:200px;height:100px; border:3px solid black; margin: 20px; display: inline-block;">
+    </div>
+    <div class="box5"
+         style="width:200px;height:100px; border:3px solid black; margin: 20px; display: inline-block;">
+    </div>
 </body>
-</html>
+</html>

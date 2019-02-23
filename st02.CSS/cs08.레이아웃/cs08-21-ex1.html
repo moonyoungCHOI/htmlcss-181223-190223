@@ -5,6 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <title>Document</title>
 </head>
+<style>
+* {margin: 0; padding: 0;}
+html, body, #wrap {height: 100%;}
+#wrap {display: flex; 
+       flex-direction: row;
+       flex-wrap: wrap;}
+section {height: calc(50% - 80px);}
+.header {background-color: red;
+         min-height: 80px; width: 100%;
+         color: white; text-align: center;}
+.slider_section {background-color: royalblue;
+                 width: 50%; color: white; text-align: center;}
+.gallery_section {background-color: yellow;
+                  width: 25%; color: white; text-align: center;}
+.rankup_section {background-color: teal;
+                 width: 25%; color: white; text-align: center;}
+.latest_post_section {background-color: violet;
+                      width: 30%; color: white; text-align: center;}
+.popular_post_section {background-color: orange;
+                       width: 30%; color: white; text-align: center;}
+.banner_section {width: 20%;}
+.banner_box_01 {background-color: blue; height: 50%;
+                color: white; text-align: center;}
+.banner_box_02 {background-color: cornflowerblue; height: 50%;
+                color: white; text-align: center;}
+.social_section {background-color: palevioletred;
+                 width: 20%;
+                 color: white; text-align: center;}
+.footer {background-color: gray; 
+         min-height: 80px; width: 100%;}
+header h1 {position: absolute; left: 0; top: 0;
+           height: 140px;
+           background-color: red;}
+</style>
 <body>
     <div id="wrap">
         <header class="header">
@@ -24,4 +58,4 @@
         <footer class="footer">9</footer>
     </div>
 </body>
-</html>
+</html>

@@ -1,9 +1,23 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Media Queries</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>media queries</title>
 </head>
+<style>
+body {background-image: url(../images/bg0.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+	  background-size: cover;}
+@media screen and (max-width: 1204px) { 
+	body  {background-image: url(../images/bg1.jpg);}}
+@media screen and (max-width: 768px) { 
+	body  {background-image: url(../images/bg2.jpg);}}
+@media screen and (max-width: 320px) { 
+	body  {background-image: url(../images/bg3.jpg);}}
+</style>
 <body>
 </body>
 </html>

@@ -4,6 +4,21 @@
 <meta charset="UTF-8">
 <title>자식>자식>자식></title>
 <style>
+    /*common 초기화 */
+    * {margin: 0; padding: 0;}
+    ul, li {list-style-type: none;}
+    a {text-decoration: none;}
+    div {float: left;}
+
+    /* menu2*/
+    #menu2 {margin: 50px 50px 50px 200px; }
+    #menu2 > li {position: relative; 
+                 float: left; }
+    #menu2 > li > ul {display: none;}
+    #menu2 > li:hover > ul {display: block;}
+    #menu2 > li:hover > ul > li:hover {background-color: gainsboro;}
+    #menu2 > li > a:hover {background-color: gainsboro; display: block;}
+    #menu2 li {border: 1px solid gray; width: 80px; text-align: center;}
 </style>
 </head>
 <body>
